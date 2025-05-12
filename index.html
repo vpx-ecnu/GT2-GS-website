@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GT²-GS</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GT²-GS: Geometry-aware Texture Transfer for Gaussian Splatting
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/Grav1tum" target="_blank">Wenjie Liu</a><sup>1,</span>
+              <span class="author-block">
+                <a href="https://github.com/lzlcs" target="_blank">Zhongliang Liu</a><sup>2,</span>
+              <span class="author-block">
+               <a href="https://github.com/ghosard" target="_blank">Junwei Shu</a><sup>1,</span>
+              <span class="author-block">
+                <a href="https://faculty.ecnu.edu.cn/_s16/wzb/main.psp" target="_blank">Changbo Wang</a><sup>1,</span>
+              <span class="author-block">
+                <a href="https://ihpdep.github.io/" target="_blank">Yang Li</a><sup>1,<i
+                    class="fas fa-envelope"></i></sup>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>School of Computer Science and Technology, East China Normal University, Shanghai, China<br>
+                <sup>2</sup>School of Software Engineering, East China Normal University, Shanghai, China<br>
+                Arxiv 2025</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2503.22218" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/vpx-ecnu/GT2-GS" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2503.22218" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+                Transferring 2D textures to 3D modalities is of great significance for improving the efficiency of multimedia content creation. Existing approaches have rarely focused on transferring image textures onto 3D representations. 3D style transfer methods are capable of transferring abstract artistic styles to 3D scenes. However, these methods often overlook the geometric information of the scene, which makes it challenging to achieve high-quality 3D texture transfer results. 
+                In this paper, we present GT²-GS, a geometry-aware texture transfer framework for gaussian splitting. 
+                From the perspective of matching texture features with geometric information in rendered views, we identify the issue of insufficient texture features and propose a geometry-aware texture augmentation module to expand the texture feature set. 
+                Moreover, a geometry-consistent texture loss is proposed to optimize texture features into the scene representation. This loss function incorporates both camera pose and 3D geometric information of the scene, enabling controllable texture-oriented appearance editing.
+                Finally, a geometry preservation strategy is introduced. By alternating between the texture transfer and geometry correction stages over multiple iterations, this strategy achieves a balance between learning texture features and preserving geometric integrity.
+                Extensive experiments demonstrate the effectiveness and controllability of our method. Through geometric awareness, our approach achieves texture transfer results that better align with human visual perception.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+            <h2 class="title is-3">Overview</h2>
+            <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+            Pipeline of GT²-GS
+            </h2>
+        </div>
+        <!-- </div> -->
+        </div>
+    </section>
+    <!-- End image carousel -->
+    
+    <!-- Texture Orientation -->
+    <section class="section">
+    <div class="container">
+        <h2 class="title is-3">Texture Orientation Control</h2>
+
+        <!-- 第一排：3个视频 -->
+        <div class="columns is-mobile">
+        <div class="column">
+            <video autoplay loop muted playsinline controls width="100%">
+            <source src="static/rotation/fern_banded_0042.jpg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="column">
+            <video autoplay loop muted playsinline controls width="100%">
+            <source src="static/rotation/horns_banded_0047.jpg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column">
+            <video autoplay loop muted playsinline controls width="100%">
+            <source src="static/rotation/trex_chequered_0045.jpg.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+
+        <!-- 第二排：2个视频 -->
+        <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+            <video autoplay loop muted playsinline controls width="100%">
+            <source src="static/rotation/truck_banded_0154.jpg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column is-half">
+            <video autoplay loop muted playsinline controls width="100%">
+            <source src="static/rotation/family_grid_0002.jpg.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Texture Transfer (LLFF Dataset) -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Texture Transfer (LLFF Dataset)</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+        <img src="static/texture_llff/llff_fern_texture_grid_0071/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fern_texture_grid_0071/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fern_texture_grid_0071/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fern_texture_grid_0071/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fern_texture_grid_0071/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/texture_llff/llff_fortress_texture_grid_0049/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fortress_texture_grid_0049/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fortress_texture_grid_0049/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fortress_texture_grid_0049/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_fortress_texture_grid_0049/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/texture_llff/llff_horns_texture_banded_0154/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_banded_0154/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_banded_0154/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_banded_0154/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_banded_0154/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/texture_llff/llff_horns_texture_grid_0002/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_grid_0002/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_grid_0002/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_grid_0002/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_horns_texture_grid_0002/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/texture_llff/llff_orchids_texture_banded_0023/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_orchids_texture_banded_0023/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_orchids_texture_banded_0023/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_orchids_texture_banded_0023/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/texture_llff/llff_orchids_texture_banded_0023/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Texture Transfer (T&T Dataset) -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Texture Transfer (T&T Dataset)</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+    <div class="item">
+    <img src="static/texture_tnt/tnt_family_texture_chequered_0045/all.png" style="width: 100%; height: auto;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_family_texture_chequered_0045/Ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_family_texture_chequered_0045/ABC.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_family_texture_chequered_0045/ARF.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_family_texture_chequered_0045/StyleGaussian.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+        </figure>
+    </div>
+    </div>
+
+    <div class="item">
+    <img src="static/texture_tnt/tnt_m60_texture_grid_0049/all.png" style="width: 100%; height: auto;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_m60_texture_grid_0049/Ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_m60_texture_grid_0049/ABC.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_m60_texture_grid_0049/ARF.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_m60_texture_grid_0049/StyleGaussian.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+        </figure>
+    </div>
+    </div>
+
+    <div class="item">
+    <img src="static/texture_tnt/tnt_playground_texture_grooved_0065/all.png" style="width: 100%; height: auto;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_playground_texture_grooved_0065/Ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_playground_texture_grooved_0065/ABC.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_playground_texture_grooved_0065/ARF.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_playground_texture_grooved_0065/StyleGaussian.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+        </figure>
+    </div>
+    </div>
+
+    <div class="item">
+    <img src="static/texture_tnt/tnt_truck_texture_grid_0002/all.png" style="width: 100%; height: auto;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0002/Ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0002/ABC.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0002/ARF.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0002/StyleGaussian.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+        </figure>
+    </div>
+    </div>
+
+    <div class="item">
+    <img src="static/texture_tnt/tnt_truck_texture_grid_0066/all.png" style="width: 100%; height: auto;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0066/Ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0066/ABC.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0066/ARF.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+        </figure>
+        <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+        <video autoplay loop muted playsinline controls style="width: 100%;">
+            <source src="static/texture_tnt/tnt_truck_texture_grid_0066/StyleGaussian.mp4" type="video/mp4">
+        </video>
+        <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+        </figure>
+    </div>
+    </div>     
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Style Transfer (LLFF Dataset) -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Style Transfer (LLFF Dataset)</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+        <img src="static/style_llff/llff_fern_style_0/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fern_style_0/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fern_style_0/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fern_style_0/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fern_style_0/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_llff/llff_flower_style_92/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_flower_style_92/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_flower_style_92/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_flower_style_92/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_flower_style_92/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_llff/llff_fortress_style_88/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fortress_style_88/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fortress_style_88/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fortress_style_88/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_fortress_style_88/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_llff/llff_trex_style_73/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_73/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_73/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_73/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_73/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_llff/llff_trex_style_95/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_95/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_95/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_95/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_llff/llff_trex_style_95/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Style Transfer (T&T Dataset) -->
+    <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Style Transfer (T&T Dataset)</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+        <img src="static/style_tnt/tnt_family_style_0/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_0/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_0/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_0/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_0/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_tnt/tnt_family_style_88/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_88/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_88/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_88/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_family_style_88/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_tnt/tnt_playground_style_46/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_playground_style_46/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_playground_style_46/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_playground_style_46/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_playground_style_46/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_tnt/tnt_train_style_42/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_train_style_42/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_train_style_42/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_train_style_42/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_train_style_42/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="static/style_tnt/tnt_truck_style_125/all.png" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_truck_style_125/Ours.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">Ours</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_truck_style_125/ABC.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ABC</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_truck_style_125/ARF.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">ARF</figcaption>
+            </figure>
+            <figure style="width: 24%; margin: 0.5%; text-align: center; display: block;">
+            <video autoplay loop muted playsinline controls style="width: 100%;">
+                <source src="static/style_tnt/tnt_truck_style_125/StyleGaussian.mp4" type="video/mp4">
+            </video>
+            <figcaption style="display: block; margin-top: 8px; font-size: 14px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+  
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{liu2025gt,
+        title={ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting},
+        author={Liu, Wenjie and Liu, Zhongliang and Shu, Junwei and Wang, Changbo and Li, Yang},
+        journal={},
+        year={2025}
+      }</code></pre>
+    </div>
+  </section> -->
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
