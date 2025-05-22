@@ -1,6 +1,6 @@
 # Project Page
 
-This repo is [project page](https://vpx-ecnu.github.io/ABC-GS-website/) for "ABC-GS: Alignment-Based Controllable Style Transfer for 3D Gaussian Splatting"
+This repo is [project page](https://vpx-ecnu.github.io/GT2-GS-website/) for "GT²-GS: Geometry-aware Texture Transfer for Gaussian Splatting"
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
