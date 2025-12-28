@@ -1,0 +1,1165 @@
+
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Texture Transfer (LLFF Dataset)</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+        
+        <div class="item">
+        <img src="assets/compare/llff/fern/texture/grid_0071.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/fern/texture/grid_0071.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/fortress/texture/grid_0049.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/fortress/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/horns/texture/banded_0154.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/horns/texture/banded_0154.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/horns/texture/grid_0002.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/horns/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/orchids/texture/banded_0023.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/orchids/texture/banded_0023.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+        
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Texture Transfer (T&T Dataset)</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+        
+        <div class="item">
+        <img src="assets/compare/tnt/family/texture/chequered_0045.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/family/texture/chequered_0045.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/m60/texture/grid_0049.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/m60/texture/grid_0049.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/playground/texture/grooved_0065.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/playground/texture/grooved_0065.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/truck/texture/grid_0002.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/truck/texture/grid_0002.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/truck/texture/grid_0066.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/truck/texture/grid_0066.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+        
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Style Transfer (LLFF Dataset)</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+        
+        <div class="item">
+        <img src="assets/compare/llff/fern/style/0.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/fern/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/flower/style/92.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/flower/style/92.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/fortress/style/88.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/fortress/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/trex/style/73.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/trex/style/73.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/llff/trex/style/95.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/llff/trex/style/95.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+        
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Style Transfer (T&T Dataset)</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+        
+        <div class="item">
+        <img src="assets/compare/tnt/family/style/0.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/family/style/0.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/family/style/88.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/family/style/88.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/playground/style/46.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/playground/style/46.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/train/style/42.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/train/style/42.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+        <div class="item">
+        <img src="assets/compare/tnt/truck/style/125.jpg/all.jpg" style="width: 100%; height: auto;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/GT2GS/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">Ours</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/SGSST/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SGSST</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/ABCGS/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ABCGS</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/StyleGaussian/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">StyleGaussian</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/arf/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">ARF</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/refnpr/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">RefNPR</figcaption>
+            </figure>
+        
+            <figure style="flex: 0 0 calc(13.985714%); margin: 0; text-align: center;">
+                <video autoplay loop muted playsinline controls style="width: 100%; height: auto; max-height: 180px; object-fit: contain; background: #000;">
+                    <source src="assets/video/snerf/tnt/truck/style/125.jpg/video.mp4" type="video/mp4">
+                </video>
+                <figcaption style="display: block; margin-top: 6px; font-size: 13px; color: #333;">SNeRF</figcaption>
+            </figure>
+        
+        </div>
+        </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+        
